@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78463B022570978900906084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78463B012570978900906084 /* AppDelegate.swift */; };
+		78463B042570978900906084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78463B032570978900906084 /* SceneDelegate.swift */; };
+		78463B062570978900906084 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78463B052570978900906084 /* ContentView.swift */; };
+		78463B082570978B00906084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78463B072570978B00906084 /* Assets.xcassets */; };
+		78463B0B2570978B00906084 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78463B0A2570978B00906084 /* Preview Assets.xcassets */; };
+		78463B0E2570978B00906084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78463B0C2570978B00906084 /* LaunchScreen.storyboard */; };
+		78463B192570978B00906084 /* LightPomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78463B182570978B00906084 /* LightPomodoroTests.swift */; };
+		78463B242570978B00906084 /* LightPomodoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78463B232570978B00906084 /* LightPomodoroUITests.swift */; };
+		78463B322570F78500906084 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78463B312570F78500906084 /* DataManager.swift */; };
+		78463B342570FC6700906084 /* PomodoroDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78463B332570FC6700906084 /* PomodoroDataCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78463B152570978B00906084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78463AF62570978900906084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78463AFD2570978900906084;
+			remoteInfo = LightPomodoro;
+		};
+		78463B202570978B00906084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78463AF62570978900906084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78463AFD2570978900906084;
+			remoteInfo = LightPomodoro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78463AFE2570978900906084 /* LightPomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightPomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78463B012570978900906084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78463B032570978900906084 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78463B052570978900906084 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78463B072570978B00906084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78463B0A2570978B00906084 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78463B0D2570978B00906084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78463B0F2570978B00906084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78463B142570978B00906084 /* LightPomodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightPomodoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78463B182570978B00906084 /* LightPomodoroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightPomodoroTests.swift; sourceTree = "<group>"; };
+		78463B1A2570978B00906084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78463B1F2570978B00906084 /* LightPomodoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightPomodoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78463B232570978B00906084 /* LightPomodoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightPomodoroUITests.swift; sourceTree = "<group>"; };
+		78463B252570978B00906084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78463B312570F78500906084 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		78463B332570FC6700906084 /* PomodoroDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroDataCell.swift; sourceTree = "<group>"; };
+		78463B3525710AF100906084 /* LightPomodoro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LightPomodoro.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78463AFB2570978900906084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78463B112570978B00906084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78463B1C2570978B00906084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78463AF52570978900906084 = {
+			isa = PBXGroup;
+			children = (
+				78463B002570978900906084 /* LightPomodoro */,
+				78463B172570978B00906084 /* LightPomodoroTests */,
+				78463B222570978B00906084 /* LightPomodoroUITests */,
+				78463AFF2570978900906084 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78463AFF2570978900906084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78463AFE2570978900906084 /* LightPomodoro.app */,
+				78463B142570978B00906084 /* LightPomodoroTests.xctest */,
+				78463B1F2570978B00906084 /* LightPomodoroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78463B002570978900906084 /* LightPomodoro */ = {
+			isa = PBXGroup;
+			children = (
+				78463B3525710AF100906084 /* LightPomodoro.entitlements */,
+				78463B012570978900906084 /* AppDelegate.swift */,
+				78463B032570978900906084 /* SceneDelegate.swift */,
+				78463B052570978900906084 /* ContentView.swift */,
+				78463B332570FC6700906084 /* PomodoroDataCell.swift */,
+				78463B312570F78500906084 /* DataManager.swift */,
+				78463B072570978B00906084 /* Assets.xcassets */,
+				78463B0C2570978B00906084 /* LaunchScreen.storyboard */,
+				78463B0F2570978B00906084 /* Info.plist */,
+				78463B092570978B00906084 /* Preview Content */,
+			);
+			path = LightPomodoro;
+			sourceTree = "<group>";
+		};
+		78463B092570978B00906084 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				78463B0A2570978B00906084 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78463B172570978B00906084 /* LightPomodoroTests */ = {
+			isa = PBXGroup;
+			children = (
+				78463B182570978B00906084 /* LightPomodoroTests.swift */,
+				78463B1A2570978B00906084 /* Info.plist */,
+			);
+			path = LightPomodoroTests;
+			sourceTree = "<group>";
+		};
+		78463B222570978B00906084 /* LightPomodoroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78463B232570978B00906084 /* LightPomodoroUITests.swift */,
+				78463B252570978B00906084 /* Info.plist */,
+			);
+			path = LightPomodoroUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78463AFD2570978900906084 /* LightPomodoro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78463B282570978B00906084 /* Build configuration list for PBXNativeTarget "LightPomodoro" */;
+			buildPhases = (
+				78463AFA2570978900906084 /* Sources */,
+				78463AFB2570978900906084 /* Frameworks */,
+				78463AFC2570978900906084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightPomodoro;
+			productName = LightPomodoro;
+			productReference = 78463AFE2570978900906084 /* LightPomodoro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78463B132570978B00906084 /* LightPomodoroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78463B2B2570978B00906084 /* Build configuration list for PBXNativeTarget "LightPomodoroTests" */;
+			buildPhases = (
+				78463B102570978B00906084 /* Sources */,
+				78463B112570978B00906084 /* Frameworks */,
+				78463B122570978B00906084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78463B162570978B00906084 /* PBXTargetDependency */,
+			);
+			name = LightPomodoroTests;
+			productName = LightPomodoroTests;
+			productReference = 78463B142570978B00906084 /* LightPomodoroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78463B1E2570978B00906084 /* LightPomodoroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78463B2E2570978B00906084 /* Build configuration list for PBXNativeTarget "LightPomodoroUITests" */;
+			buildPhases = (
+				78463B1B2570978B00906084 /* Sources */,
+				78463B1C2570978B00906084 /* Frameworks */,
+				78463B1D2570978B00906084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78463B212570978B00906084 /* PBXTargetDependency */,
+			);
+			name = LightPomodoroUITests;
+			productName = LightPomodoroUITests;
+			productReference = 78463B1F2570978B00906084 /* LightPomodoroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78463AF62570978900906084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Johnny;
+				TargetAttributes = {
+					78463AFD2570978900906084 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					78463B132570978B00906084 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 78463AFD2570978900906084;
+					};
+					78463B1E2570978B00906084 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 78463AFD2570978900906084;
+					};
+				};
+			};
+			buildConfigurationList = 78463AF92570978900906084 /* Build configuration list for PBXProject "LightPomodoro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78463AF52570978900906084;
+			productRefGroup = 78463AFF2570978900906084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78463AFD2570978900906084 /* LightPomodoro */,
+				78463B132570978B00906084 /* LightPomodoroTests */,
+				78463B1E2570978B00906084 /* LightPomodoroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78463AFC2570978900906084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78463B0E2570978B00906084 /* LaunchScreen.storyboard in Resources */,
+				78463B0B2570978B00906084 /* Preview Assets.xcassets in Resources */,
+				78463B082570978B00906084 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78463B122570978B00906084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78463B1D2570978B00906084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78463AFA2570978900906084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78463B342570FC6700906084 /* PomodoroDataCell.swift in Sources */,
+				78463B022570978900906084 /* AppDelegate.swift in Sources */,
+				78463B322570F78500906084 /* DataManager.swift in Sources */,
+				78463B042570978900906084 /* SceneDelegate.swift in Sources */,
+				78463B062570978900906084 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78463B102570978B00906084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78463B192570978B00906084 /* LightPomodoroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78463B1B2570978B00906084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78463B242570978B00906084 /* LightPomodoroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78463B162570978B00906084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78463AFD2570978900906084 /* LightPomodoro */;
+			targetProxy = 78463B152570978B00906084 /* PBXContainerItemProxy */;
+		};
+		78463B212570978B00906084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78463AFD2570978900906084 /* LightPomodoro */;
+			targetProxy = 78463B202570978B00906084 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78463B0C2570978B00906084 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78463B0D2570978B00906084 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78463B262570978B00906084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78463B272570978B00906084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78463B292570978B00906084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LightPomodoro/LightPomodoro.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LightPomodoro/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LightPomodoro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LightPomodoro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78463B2A2570978B00906084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LightPomodoro/LightPomodoro.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LightPomodoro/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LightPomodoro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LightPomodoro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78463B2C2570978B00906084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LightPomodoroTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LightPomodoroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightPomodoro.app/LightPomodoro";
+			};
+			name = Debug;
+		};
+		78463B2D2570978B00906084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LightPomodoroTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LightPomodoroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightPomodoro.app/LightPomodoro";
+			};
+			name = Release;
+		};
+		78463B2F2570978B00906084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LightPomodoroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LightPomodoroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LightPomodoro;
+			};
+			name = Debug;
+		};
+		78463B302570978B00906084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LightPomodoroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LightPomodoroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LightPomodoro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78463AF92570978900906084 /* Build configuration list for PBXProject "LightPomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78463B262570978B00906084 /* Debug */,
+				78463B272570978B00906084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78463B282570978B00906084 /* Build configuration list for PBXNativeTarget "LightPomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78463B292570978B00906084 /* Debug */,
+				78463B2A2570978B00906084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78463B2B2570978B00906084 /* Build configuration list for PBXNativeTarget "LightPomodoroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78463B2C2570978B00906084 /* Debug */,
+				78463B2D2570978B00906084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78463B2E2570978B00906084 /* Build configuration list for PBXNativeTarget "LightPomodoroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78463B2F2570978B00906084 /* Debug */,
+				78463B302570978B00906084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78463AF62570978900906084 /* Project object */;
+}
