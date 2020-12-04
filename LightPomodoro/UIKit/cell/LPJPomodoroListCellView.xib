@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LPJPomodoroListCellView" customModule="LightPomodoro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r6O-1V-qzU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjC-UL-vHK">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StP-y9-H3p">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                    <state key="normal" title="Time: 00:00">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.11089122051408451" green="0.58055602303521125" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="StP-y9-H3p" firstAttribute="leading" secondItem="CjC-UL-vHK" secondAttribute="leading" id="BrH-AA-f0D"/>
+                                <constraint firstAttribute="bottom" secondItem="StP-y9-H3p" secondAttribute="bottom" id="E7P-hQ-mLv"/>
+                                <constraint firstItem="StP-y9-H3p" firstAttribute="top" secondItem="CjC-UL-vHK" secondAttribute="top" id="GQx-d2-tRK"/>
+                                <constraint firstAttribute="trailing" secondItem="StP-y9-H3p" secondAttribute="trailing" id="GUj-re-XIl"/>
+                                <constraint firstAttribute="height" constant="64" id="jF1-Zz-nGN"/>
+                            </constraints>
+                        </view>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOj-HQ-leq">
+                            <rect key="frame" x="0.0" y="64" width="414" height="176"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </datePicker>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="r6O-1V-qzU" secondAttribute="trailing" id="EBm-2U-xyh"/>
+                <constraint firstItem="r6O-1V-qzU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yro-3C-qd9"/>
+                <constraint firstAttribute="bottom" secondItem="r6O-1V-qzU" secondAttribute="bottom" id="b0F-Ru-OBm"/>
+                <constraint firstItem="r6O-1V-qzU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xHZ-ms-I1R"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="datePicker" destination="hOj-HQ-leq" id="5B4-Au-ybi"/>
+                <outlet property="titleBgView" destination="CjC-UL-vHK" id="n1R-xE-f2I"/>
+                <outlet property="titleButton" destination="StP-y9-H3p" id="gPB-o8-WdD"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="336.16071428571428"/>
+        </view>
+    </objects>
+</document>

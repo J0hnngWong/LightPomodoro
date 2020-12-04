@@ -11,12 +11,22 @@ import Combine
 
 final class DataManager: ObservableObject {
     
+    public var pomodoroDataChangeHandlers: [(([PomodoroModel]) -> ())] = []
+    
     public static let shared = DataManager()
     
-    @Published var pomodoroData: [PomodoroModel] = fakePomodoroListData
+    @Published var pomodoroData: [PomodoroModel] = fakePomodoroListData {
+        didSet {
+            pomodoroDataChangeHandlers.forEach { $0(pomodoroData) }
+        }
+    }
     
     private init() {
         
+    }
+    
+    public func addObserve(pomodoroDataChangeEvent: @escaping (([PomodoroModel]) -> ())) {
+        pomodoroDataChangeHandlers.append(pomodoroDataChangeEvent)
     }
 }
 
