@@ -11,7 +11,7 @@ import UIKit
 public class LPJPomodoroListCellView: UIView, CustomNibViewProtocol {
     
     var countDownChangeHandlers: [TimeIntervalBlock] = []
-    var titleButtonClickHandlers: [VoidBlock] = []
+    var titleButtonClickHandlers: [((Bool) -> ())] = []
     
     var fold: Bool = true {
         didSet {
@@ -56,7 +56,7 @@ public extension LPJPomodoroListCellView {
         countDownChangeHandlers.append(datePickerChangeEvent)
     }
     
-    func addAction(titleButtonClickEvent: @escaping VoidBlock) {
+    func addAction(titleButtonClickEvent: @escaping ((Bool) -> ())) {
         titleButtonClickHandlers.append(titleButtonClickEvent)
     }
 }
@@ -77,7 +77,7 @@ extension LPJPomodoroListCellView {
     @objc
     func titleButtonClickAction(sender: UIButton?) {
         if let senderTmp = sender, senderTmp == self.titleButton {
-            titleButtonClickHandlers.forEach { $0() }
+            titleButtonClickHandlers.forEach { $0(fold) }
         }
     }
 }

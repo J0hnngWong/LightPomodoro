@@ -47,12 +47,16 @@ extension LPJPomodoroListViewController {
         tableView.lpj.top.to(item: self.view).top.offset(constant: 0, safeArea: true)
     }
     
-    func tableViewUpdate() {
-        tableView.performBatchUpdates({
-            self.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
-        }) { (finish) in
-            self.tableView.reloadData()
+    func tableViewUpdate(with indexPath: IndexPath) {
+//        tableView.performBatchUpdates({
+//            self.tableView.reloadSections(IndexSet(integer: 0), with: .bottom)
+//        }) { (finish) in
+//            self.tableView.reloadData()
+//        }
+        UIView.animate(withDuration: 0.3) {
+            self.tableView.reloadRows(at: [indexPath], with: .none)
         }
+//        tableView.reloadData()
     }
 }
 
@@ -73,12 +77,19 @@ extension LPJPomodoroListViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: LPJPomodoroListCell.reuseIdentifier, for: indexPath) as? LPJPomodoroListCell ?? LPJPomodoroListCell()
         cell.cellView.fold = viewModel.foldStatus[indexPath.row]
-        cell.foldStatuChangeHandler = { [weak self] in
+        cell.foldStatuChangeHandler = { [weak self] (foldStatus) in
             guard let sself = self else { return }
-            sself.tableViewUpdate()
+            sself.viewModel.foldStatus[indexPath.row] = foldStatus
+            sself.tableViewUpdate(with: indexPath)
         }
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if viewModel.foldStatus[indexPath.row] {
+            return LPJPomodoroListCell.cellFoldStatusHeight
+        } else {
+            return LPJPomodoroListCell.cellUnfoldStatusHeight
+        }
+    }
 }

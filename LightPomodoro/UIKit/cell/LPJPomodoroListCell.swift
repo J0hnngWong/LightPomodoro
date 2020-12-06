@@ -10,11 +10,22 @@ import UIKit
 
 public class LPJPomodoroListCell: UITableViewCell, CustomNibViewProtocol {
     
-    public var foldStatuChangeHandler: VoidBlock?
+    static let cellFoldStatusHeight: CGFloat = 64 + 16 + 16
+    
+    static let cellUnfoldStatusHeight: CGFloat = 240 + 16 + 16
+    
+    public var foldStatuChangeHandler: ((Bool) -> ())?
     
     public static let reuseIdentifier = NSStringFromClass(LPJPomodoroListCell.classForCoder())
     
-    public let cellView = LPJPomodoroListCellView.getView(defaultView: LPJPomodoroListCellView(frame: .zero))
+    public lazy var cellView: LPJPomodoroListCellView = {
+        let cellView = LPJPomodoroListCellView.getView(defaultView: LPJPomodoroListCellView(frame: .zero))
+        cellView.layer.cornerRadius = 8
+//        cellView.layer.shadowColor = UIColor.gray.cgColor
+//        cellView.layer.shadowRadius = 3
+        cellView.clipsToBounds = true
+        return cellView
+    }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -41,10 +52,10 @@ public class LPJPomodoroListCell: UITableViewCell, CustomNibViewProtocol {
     }
     
     func setupEvents() {
-        cellView.addAction { [weak self] in
+        cellView.addAction(titleButtonClickEvent: { [weak self] (foldStatus) in
             guard let sself = self else { return }
-            sself.cellView.fold = !sself.cellView.fold
-            sself.foldStatuChangeHandler?()
-        }
+            sself.cellView.fold = !foldStatus
+            sself.foldStatuChangeHandler?(sself.cellView.fold)
+        })
     }
 }

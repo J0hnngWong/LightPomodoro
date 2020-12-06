@@ -491,6 +491,7 @@
 				CODE_SIGN_ENTITLEMENTS = LightPomodoro/LightPomodoro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LightPomodoro/Preview Content\"";
+				DEVELOPMENT_TEAM = 6KG7UG74Q2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LightPomodoro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -512,6 +513,7 @@
 				CODE_SIGN_ENTITLEMENTS = LightPomodoro/LightPomodoro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LightPomodoro/Preview Content\"";
+				DEVELOPMENT_TEAM = 6KG7UG74Q2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LightPomodoro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
