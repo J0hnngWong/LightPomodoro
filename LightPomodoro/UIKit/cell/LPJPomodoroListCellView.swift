@@ -19,6 +19,7 @@ public class LPJPomodoroListCellView: UIView, CustomNibViewProtocol {
         }
     }
     
+    @IBOutlet weak var contentBgView: UIView!
     @IBOutlet weak var titleBgView: UIView!
     @IBOutlet weak var titleButton: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -42,6 +43,8 @@ public class LPJPomodoroListCellView: UIView, CustomNibViewProtocol {
     
     func setupSubviews() {
         datePicker.isHidden = fold
+        contentBgView.layer.cornerRadius = 8
+        contentBgView.clipsToBounds = true
     }
     
     func setupEvents() {
@@ -58,6 +61,14 @@ public extension LPJPomodoroListCellView {
     
     func addAction(titleButtonClickEvent: @escaping ((Bool) -> ())) {
         titleButtonClickHandlers.append(titleButtonClickEvent)
+    }
+    
+    func updateButtonTitle(text: String) {
+        titleButton.setTitle(text, for: .normal)
+    }
+    
+    func updateDatePickerCountDownTime(with countDown: TimeInterval) {
+        datePicker.countDownDuration = countDown
     }
 }
 

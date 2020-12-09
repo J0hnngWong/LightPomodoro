@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,43 +12,56 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjC-UL-vHK">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaw-3c-SUc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StP-y9-H3p">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjC-UL-vHK">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
-                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
-                            <state key="normal" title="Time: 00:00">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                        </button>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StP-y9-H3p">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                    <state key="normal" title="Time: 00:00">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.11089122051408451" green="0.58055602303521125" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="StP-y9-H3p" firstAttribute="leading" secondItem="CjC-UL-vHK" secondAttribute="leading" id="BrH-AA-f0D"/>
+                                <constraint firstAttribute="bottom" secondItem="StP-y9-H3p" secondAttribute="bottom" id="E7P-hQ-mLv"/>
+                                <constraint firstItem="StP-y9-H3p" firstAttribute="top" secondItem="CjC-UL-vHK" secondAttribute="top" id="GQx-d2-tRK"/>
+                                <constraint firstAttribute="trailing" secondItem="StP-y9-H3p" secondAttribute="trailing" id="GUj-re-XIl"/>
+                                <constraint firstAttribute="height" constant="64" id="jF1-Zz-nGN"/>
+                            </constraints>
+                        </view>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOj-HQ-leq">
+                            <rect key="frame" x="0.0" y="64" width="414" height="176"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </datePicker>
                     </subviews>
-                    <color key="backgroundColor" red="0.11089122051408451" green="0.58055602303521125" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstItem="StP-y9-H3p" firstAttribute="leading" secondItem="CjC-UL-vHK" secondAttribute="leading" id="BrH-AA-f0D"/>
-                        <constraint firstAttribute="bottom" secondItem="StP-y9-H3p" secondAttribute="bottom" id="E7P-hQ-mLv"/>
-                        <constraint firstItem="StP-y9-H3p" firstAttribute="top" secondItem="CjC-UL-vHK" secondAttribute="top" id="GQx-d2-tRK"/>
-                        <constraint firstAttribute="trailing" secondItem="StP-y9-H3p" secondAttribute="trailing" id="GUj-re-XIl"/>
-                        <constraint firstAttribute="height" constant="64" id="jF1-Zz-nGN"/>
+                        <constraint firstItem="hOj-HQ-leq" firstAttribute="top" secondItem="CjC-UL-vHK" secondAttribute="bottom" id="FDD-zO-yd1"/>
+                        <constraint firstItem="hOj-HQ-leq" firstAttribute="leading" secondItem="qaw-3c-SUc" secondAttribute="leading" id="MuP-8u-MXq"/>
+                        <constraint firstAttribute="bottom" secondItem="hOj-HQ-leq" secondAttribute="bottom" id="Pmm-pe-vXC"/>
+                        <constraint firstItem="CjC-UL-vHK" firstAttribute="leading" secondItem="qaw-3c-SUc" secondAttribute="leading" id="QA7-q3-8se"/>
+                        <constraint firstAttribute="trailing" secondItem="CjC-UL-vHK" secondAttribute="trailing" id="bbJ-kd-tgZ"/>
+                        <constraint firstItem="CjC-UL-vHK" firstAttribute="top" secondItem="qaw-3c-SUc" secondAttribute="top" id="gOs-sQ-yl3"/>
+                        <constraint firstAttribute="trailing" secondItem="hOj-HQ-leq" secondAttribute="trailing" id="r4b-zf-17n"/>
                     </constraints>
                 </view>
-                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOj-HQ-leq">
-                    <rect key="frame" x="0.0" y="64" width="414" height="176"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </datePicker>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="hOj-HQ-leq" firstAttribute="top" secondItem="CjC-UL-vHK" secondAttribute="bottom" id="2Av-hp-MAj"/>
-                <constraint firstItem="CjC-UL-vHK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JdM-WO-m14"/>
-                <constraint firstItem="hOj-HQ-leq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Q1m-sH-fZm"/>
-                <constraint firstItem="CjC-UL-vHK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eGB-Re-6Hr"/>
-                <constraint firstAttribute="trailing" secondItem="CjC-UL-vHK" secondAttribute="trailing" id="kq0-jd-er5"/>
-                <constraint firstAttribute="bottom" secondItem="hOj-HQ-leq" secondAttribute="bottom" id="o8l-ek-Wuj"/>
-                <constraint firstAttribute="trailing" secondItem="hOj-HQ-leq" secondAttribute="trailing" id="yoy-W1-HSr"/>
+                <constraint firstItem="qaw-3c-SUc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vf8-aT-N8t"/>
+                <constraint firstAttribute="bottom" secondItem="qaw-3c-SUc" secondAttribute="bottom" id="sh5-SQ-AvS"/>
+                <constraint firstItem="qaw-3c-SUc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ugj-un-msG"/>
+                <constraint firstAttribute="trailing" secondItem="qaw-3c-SUc" secondAttribute="trailing" id="yRn-QL-gBA"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="contentBgView" destination="qaw-3c-SUc" id="6AY-78-JDa"/>
                 <outlet property="datePicker" destination="hOj-HQ-leq" id="5B4-Au-ybi"/>
                 <outlet property="titleBgView" destination="CjC-UL-vHK" id="n1R-xE-f2I"/>
                 <outlet property="titleButton" destination="StP-y9-H3p" id="gPB-o8-WdD"/>
@@ -58,9 +69,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="336.16071428571428"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

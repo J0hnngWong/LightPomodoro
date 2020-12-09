@@ -10,6 +10,8 @@ import Foundation
 
 class LPJPomodoroListViewModel {
     
+    var dataChangedHandler: ((DataChangeAction, Int, [PomodoroModel]) -> ())?
+    
     let dataManager: DataManager
     
     var foldStatus: [Bool] = []
@@ -24,7 +26,7 @@ class LPJPomodoroListViewModel {
             foldStatus.append(true)
         }
         
-        manager.addObserve { [weak self] (pomodoroDatas) in
+        manager.addObserve { [weak self] (action, index, pomodoroDatas) in
             guard let sself = self else { return }
             while sself.foldStatus.count < pomodoroDatas.count {
                 sself.foldStatus.append(true)
@@ -33,5 +35,28 @@ class LPJPomodoroListViewModel {
                 sself.foldStatus.removeLast()
             }
         }
+        
+        manager.addObserve { [weak self] (action, index, pomodoroDatas) in
+            guard let sself = self else { return }
+            sself.dataChangedHandler?(action, index, pomodoroDatas)
+        }
+    }
+    
+    func addNewTimeCell() {
+        dataManager.addPomodoroData(model: PomodoroModel(id: UUID(), countDownTimeInterval: 0))
+    }
+    
+    func deleteTimeCellWith(identifier: UUID) {
+        dataManager.deletePomodoroData(identifier: identifier)
+    }
+    
+    func updateTimeCell(with indexPath: IndexPath, countDown: TimeInterval) {
+        if let identifier = SAFE_OBJECT_FROM(arr: dataManager.pomodoroData, index: indexPath.row)?.id {
+            dataManager.updatePomodoroData(identifier: identifier, countDownInterval: countDown)
+        }
+    }
+    
+    func searchForTimeCell(identifier: UUID) -> PomodoroModel {
+        return PomodoroModel(id: identifier, countDownTimeInterval: 0)
     }
 }

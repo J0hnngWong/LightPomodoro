@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78419D2A2580BE710026C1E6 /* LPJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78419D292580BE710026C1E6 /* LPJNavigationController.swift */; };
 		78463B022570978900906084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78463B012570978900906084 /* AppDelegate.swift */; };
 		78463B042570978900906084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78463B032570978900906084 /* SceneDelegate.swift */; };
 		78463B062570978900906084 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78463B052570978900906084 /* ContentView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		78419D292580BE710026C1E6 /* LPJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPJNavigationController.swift; sourceTree = "<group>"; };
 		78463AFE2570978900906084 /* LightPomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightPomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78463B012570978900906084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78463B032570978900906084 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				78463B052570978900906084 /* ContentView.swift */,
 				78463B332570FC6700906084 /* PomodoroDataCell.swift */,
 				78463B312570F78500906084 /* DataManager.swift */,
+				78419D292580BE710026C1E6 /* LPJNavigationController.swift */,
 				78463B072570978B00906084 /* Assets.xcassets */,
 				78463B0C2570978B00906084 /* LaunchScreen.storyboard */,
 				78463B0F2570978B00906084 /* Info.plist */,
@@ -316,6 +319,7 @@
 			files = (
 				78AE49922579E76400EAD83E /* LPJPomodoroListViewController.swift in Sources */,
 				78AE499B2579EC3700EAD83E /* LPJPomodoroListCellView.swift in Sources */,
+				78419D2A2580BE710026C1E6 /* LPJNavigationController.swift in Sources */,
 				78463B342570FC6700906084 /* PomodoroDataCell.swift in Sources */,
 				78463B022570978900906084 /* AppDelegate.swift in Sources */,
 				78AE49942579E7A500EAD83E /* LPJPomodoroListViewModel.swift in Sources */,

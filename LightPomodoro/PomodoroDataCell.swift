@@ -16,15 +16,7 @@ struct PomodoroDataCell: View {
         VStack {
             HStack {
                 Text("Hours")
-                Text("\(model.hour)")
-            }
-            HStack {
-                Text("Minutes")
-                Text("\(model.minute)")
-            }
-            HStack {
-                Text("Second")
-                Text("\(model.second)")
+                Text("\(model.countDownTimeInterval)")
             }
         }
     }

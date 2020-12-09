@@ -29,7 +29,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             if usingUIKit {
                 let viewModel = LPJPomodoroListViewModel(with: DataManager.shared)
-                window.rootViewController = LPJPomodoroListViewController(with: viewModel)
+                let vc = LPJPomodoroListViewController(with: viewModel)
+                let naviVC = LPJNavigationController(rootViewController: vc)
+                window.rootViewController = naviVC
                 self.window = window
                 window.makeKeyAndVisible()
             } else {

@@ -9,6 +9,16 @@
 import Foundation
 import UIKit
 
+// MARK: Foundation
+
+func SAFE_OBJECT_FROM<T>(arr: Array<T>, index: Int) -> T? {
+    if index < arr.count {
+        return arr[index]
+    } else {
+        return nil
+    }
+}
+
 // MARK: UI
 
 enum FontType {
