@@ -40,6 +40,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 window.makeKeyAndVisible()
             }
         }
+        
+        
+        // test
+        LPJTimer.shared.startCountDown(from: 10, completion: nil)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

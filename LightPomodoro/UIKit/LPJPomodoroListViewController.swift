@@ -26,6 +26,7 @@ class LPJPomodoroListViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(LPJPomodoroListCell.self, forCellReuseIdentifier: LPJPomodoroListCell.reuseIdentifier)
         tableView.separatorStyle = .none
+        tableView.clipsToBounds = false
         return tableView
     }()
     
@@ -50,7 +51,7 @@ class LPJPomodoroListViewController: UIViewController {
 extension LPJPomodoroListViewController {
     
     func setupSubviews() {
-        view.backgroundColor = .white
+        view.backgroundColor = .clear
         
         view.addSubview(tableView)
         tableView.lpj.left.to(item: self.view).left.offset(constant: 0, safeArea: true)
